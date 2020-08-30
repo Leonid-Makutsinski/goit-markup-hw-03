@@ -15,9 +15,8 @@ html {
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-
 
 body {
     background-color: var(--primary-bg-color);
@@ -28,6 +27,13 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -44,6 +50,9 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.link {
+    text-decoration: none;
 }
 
 .section {
@@ -74,8 +83,6 @@ a {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .header .flexbox {
@@ -103,6 +110,8 @@ a {
 }
 .site-nav {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .menu-item:not(:last-child) {
@@ -122,6 +131,8 @@ a {
 
 .header-contacts {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-contacts .link {
@@ -209,9 +220,12 @@ a {
 /* about-us-gallery */
 .about-us {
     display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .about-us .item {
-    width: calc((100% - 30px * 2) / 3);
+    width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
 }
 .about-us .item:last-child {
@@ -346,7 +360,7 @@ a {
     margin-bottom: 50px;
 }
 .image-portfolio {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .desc-portfolio {
     margin-left: 24px;
