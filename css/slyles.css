@@ -363,7 +363,8 @@ a {
     margin-bottom: 20px;
 }
 .desc-portfolio {
-    margin-left: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .portfolio-list .title {
@@ -374,7 +375,6 @@ a {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
-    
 }
 .portfolio-list .text {
     color: var(--secondary-text-color);
